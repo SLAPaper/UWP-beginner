@@ -6,5 +6,20 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="ClickMeButton"
+                Margin="75,38,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="ClickMeButton_Click"
+                Content="Click This"
+                FontSize="24" />
+        <TextBlock x:Name="ResultTextBlock"
+                   Margin="75,146,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontSize="24"
+                   Text=""
+                   TextWrapping="Wrap" />
+    </Grid>
 </Page>
